@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout for all content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfessionalListActivity"
+    android:id="@+id/linear">
+
+    <!-- LinearLayout to display top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- ImageView to display back button -->
+        <ImageView
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <!-- ImageView to display industry button -->
+        <ImageView
+            android:id="@+id/industry"
+            android:onClick="industry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_in"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView to display home button -->
+        <ImageView
+            android:id="@+id/home"
+            android:onClick="home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/pf"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView to display logout button -->
+        <ImageView
+            android:id="@+id/logout"
+            android:onClick="logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logout"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display profession title -->
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp" />
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- ScrollView to display the professionals -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- LinearLayout to display professionals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- RelativeLayout for the professionals -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="one">
+                <!-- ImageView to display person -->
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/person"
+                    android:scaleType="fitXY"/>
+                <!-- TextView to display professional name -->
+                <TextView
+                    android:id="@+id/personName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <!-- ImageView to display star rating -->
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="116dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <!-- TextView to display rating count -->
+                <TextView
+                    android:id="@+id/personRatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="82dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- RelativeLayout to display another professional -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="two">
+                <!-- ImageView to display person -->
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/person"
+                    android:scaleType="fitXY"/>
+                <!-- TextView to display professional name -->
+                <TextView
+                    android:id="@+id/personName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <!-- ImageView to display star rating -->
+                <ImageView
+                    android:id="@+id/star11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="116dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <ImageView
+                    android:id="@+id/star51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="20dp" />
+                <!-- TextView to display professional rating count -->
+                <TextView
+                    android:id="@+id/personRatingCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="82dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

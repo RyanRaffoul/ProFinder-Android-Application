@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout for all content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".SignUpActivity"
+    android:id="@+id/linear">
+
+    <!-- ImageView for back button to go back to login page -->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="back"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+    <!-- ImageView for ProFinder logo -->
+    <ImageView
+        android:id="@+id/pf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/pf"
+        android:layout_gravity="center"
+        />
+    <!-- TextView for the Create Account -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Create Account"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <!-- EditText to create a username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Create Username"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin" />
+    <!-- EditText to create a password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Create Password"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin"
+        android:inputType="textPassword"/>
+    <!-- EditText to re enter created password -->
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Re-enter Password"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin"
+        android:inputType="textPassword"/>
+    <!-- EditText to enter first name -->
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="First Name"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin" />
+    <!-- EditText to enter last name -->
+    <EditText
+        android:id="@+id/last"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Last Name"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin" />
+    <!-- Edit Text to enter a email -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="E-mail"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin" />
+    <!-- Button to submit the signup information -->
+    <Button
+        android:id="@+id/login"
+        android:onClick="userSignUp"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="SIGN UP"
+        android:backgroundTint="@color/orange"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+</LinearLayout>

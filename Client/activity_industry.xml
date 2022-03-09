@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout for all content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndustryActivity"
+    android:id="@+id/linear">
+
+    <!-- Linear Layout to display top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- ImageView to display back button -->
+        <ImageView
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <!-- ImageView to display home button -->
+        <ImageView
+            android:id="@+id/home"
+            android:onClick="home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView to display logo button -->
+        <ImageView
+            android:id="@+id/logo"
+            android:onClick="home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/pf"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView to display logout button -->
+        <ImageView
+            android:id="@+id/logout"
+            android:onClick="logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logout"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display Industry title -->
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Industries"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp" />
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+    <!-- ScrollView for the industries -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Linear Layout to display each industry -->
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- TextView to display business -->
+            <TextView
+                android:id="@+id/business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_business"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Business"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display car -->
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_car"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Car Repairs"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display chef -->
+            <TextView
+                android:id="@+id/chef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_chef"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Chefs"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display dentist -->
+            <TextView
+                android:id="@+id/dentist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_dentist"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Dentists"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display doctor -->
+            <TextView
+                android:id="@+id/doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_doctor"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Doctors"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display home repair -->
+            <TextView
+                android:id="@+id/homerepair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_homerepair"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Home Repairs"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to dispaly personal trainer -->
+            <TextView
+                android:id="@+id/personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_personal"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Personal Trainers"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display sports -->
+            <TextView
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_sports"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Sports Lessons"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display tutor -->
+            <TextView
+                android:id="@+id/tutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_tutor"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Tutors"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+            <!-- TextView to display other -->
+            <TextView
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_other"
+                android:drawablePadding="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Other"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:onClick="professionallist"/>
+            <!-- display a horizontal line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

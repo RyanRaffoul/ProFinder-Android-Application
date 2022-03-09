@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout for all content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/linear">
+
+    <!-- Linear Layout for the top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- ImageView for the home button -->
+        <ImageView
+            android:id="@+id/home"
+            android:onClick="home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <!-- ImageView for the industry button -->
+        <ImageView
+            android:id="@+id/industry"
+            android:onClick="industry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_in"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView for the logo button -->
+        <ImageView
+            android:id="@+id/logo"
+            android:onClick="home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/pf"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            />
+        <!-- ImageView for the logout button -->
+        <ImageView
+            android:id="@+id/logout"
+            android:onClick="logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logout"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display username -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp"
+        />
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+    <!-- TextView to display first name -->
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <!-- TextView to display last name -->
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <!-- TextView to display email -->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginTop="20dp"/>
+    <!-- TextView for title Popular Industries -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Popular Industries"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp"
+        />
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display a popular industry -->
+    <TextView
+        android:id="@+id/tutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_tutor"
+        android:drawablePadding="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Tutors"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:onClick="professionallist"/>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display a popular industry -->
+    <TextView
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_car"
+        android:drawablePadding="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Car Repairs"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:onClick="professionallist"/>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+    <!-- TextView to display a popular industry -->
+    <TextView
+        android:id="@+id/homerepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_homerepair"
+        android:drawablePadding="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Home Repairs"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:onClick="professionallist"/>
+    <!-- display a horizontal line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+</LinearLayout>

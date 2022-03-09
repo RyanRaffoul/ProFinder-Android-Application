@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout for all content -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/linear">
+
+    <!-- ImageView for ProFinder Logo -->
+    <ImageView
+        android:id="@+id/pf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="115dp"
+        android:src="@drawable/pf"
+        android:layout_gravity="center"
+        />
+    <!-- TextView for ProFinder name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+    <!-- EditText for username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Username"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin" />
+    <!-- EditText for password -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-0.25dp"
+        android:background="@drawable/input_edit_text"
+        android:hint="Password"
+        android:padding="16dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/gray"
+        android:textSize="14sp"
+        tools:ignore="LabelFor,NegativeMargin"
+        android:inputType="textPassword"/>
+    <!-- Button for sending username and password -->
+    <Button
+        android:id="@+id/login"
+        android:onClick="userLogIn"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="LOG IN"
+        android:backgroundTint="@color/orange"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+    <!-- TextView for sign up -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif"
+        android:text="OR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+    <!-- Button to Sign Up instead -->
+    <Button
+        android:id="@+id/signup"
+        android:onClick="userSignUp"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="SIGN UP"
+        android:backgroundTint="@color/orange"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
